@@ -153,11 +153,7 @@ ignores bad escape sequences leaving them in strings unaltered
 if you're migrating from jsx v1.x to v2.x in most cases you won't need to
 make any changes to your code
 
-support for encoding otp 17.0's new map type is now enabled by default when compiling
-via rebar for any release that supports them. jsx should still compile cleanly for
-earlier releases without any user intervention. if you'd like to disable maps you can
-either set the env variable `JSX_NOMAPS` or by uncommenting the applicable tuple in
-`rebar.config`
+support for encoding otp 17.0's new map type is now enabled by default.
 
 if you used any of `replaced_bad_utf8`, `single_quoted_strings`, `comments`,
 `ignored_bad_escapes` or `relax` you can simply omit them from your calls to jsx,
